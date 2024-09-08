@@ -2,12 +2,12 @@ const fastify = require('fastify');
 require("dotenv").config()
 
 const path = require("path");
-const connect = require("./db/db")
+// const connect = require("./db/db")
 
-const daftar = require('./api/daftar')
-const login = require('./api/login')
-const gate = require('./api/gate')
-const auth1 = require('./auth/authone')
+// const daftar = require('./api/daftar')
+// const login = require('./api/login')
+// const gate = require('./api/gate')
+// const auth1 = require('./auth/authone')
 
 var nyambung = false
 
@@ -30,10 +30,10 @@ var init = () => {
     })
 
 
-    app.post('/api/daftar', daftar)
-    app.post('/api/login', login)
-    app.post('/api/gate', gate)
-    app.post('/api/auth1', auth1)
+    // app.post('/api/daftar', daftar)
+    // app.post('/api/login', login)
+    // app.post('/api/gate', gate)
+    // app.post('/api/auth1', auth1)
 
 
     app.get('/', (abrakadabracilukbaaaaaaa, res) => {
