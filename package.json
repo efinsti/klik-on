@@ -4,7 +4,7 @@
   "start": "node server.js",
   "go": "nodemon server.js -e *",
   "wp": "webpack --config webpack.config.js --watch",
-  "tw": "tailwindcss -i ./dist/css/input.css -o ./dist/css/main.css"
+  "tw": "tailwindcss -i ./dist/css/input.css -o ./dist/css/main.css --watch"
  },
  "dependencies": {
   "@fastify/static": "^6.10.2",

@@ -9,13 +9,13 @@ const login = require('./api/login')
 const gate = require('./api/gate')
 const auth1 = require('./auth/authone')
 
-// var nyambung = false
+var nyambung = false
 
-// connect()
-//     .then(smartTheo => {
-//         nyambung = smartTheo;
-//     })
-//     .catch(err => console.log(err));
+connect()
+    .then(smartTheo => {
+        nyambung = smartTheo;
+    })
+    .catch(err => console.log(err));
 
 var init = () => {
     const app = fastify({
