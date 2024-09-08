@@ -1,0 +1,26 @@
+{
+ "private": true,
+ "scripts": {
+  "start": "node server.js",
+  "go": "nodemon server.js -e *",
+  "wp": "webpack --config webpack.config.js --watch",
+  "tw": "tailwindcss -i ./dist/css/input.css -o ./dist/css/main.css"
+ },
+ "dependencies": {
+  "@fastify/static": "^6.10.2",
+  "@tailwindcss/typography": "^0.5.10",
+  "bcrypt": "^5.0.1",
+  "dotenv": "^16.3.1",
+  "fastify": "^4.18.0",
+  "lodash": "^4.17.21",
+  "mongoose": "^7.5.0",
+  "newrelic": "^11.1.0",
+  "njwt": "^2.0.0"
+ },
+ "devDependencies": {
+  "daisyui": "^3.7.4",
+  "tailwindcss": "^3.3.2",
+  "webpack": "^5.88.0",
+  "webpack-cli": "^5.1.4"
+ }
+}
